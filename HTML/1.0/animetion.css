@@ -1,0 +1,101 @@
+    body {
+    background: #0E2C42;
+    font-family: "Helvetica", "Arial", sans-serif;
+    background: #0E2C42;
+    color: rgba(255,255,255,0.8);
+    font-weight: 100;
+    font-size: 15px;
+  }
+  #loading_container{
+    width: 150px;
+    height: 100px;
+    position: absolute;
+    margin: auto;
+    display: block;
+    top: 50%;
+    left: 50%;
+  }
+  .L{
+    position: absolute;
+    left:5%;
+    top:50%;
+    animation: L 2s infinite;
+  }
+  .O{
+    position: absolute;
+    left:18%;
+    top:50%;
+    animation: O 2s infinite;
+    animation-delay: 100ms;
+  }
+  .A{
+    position: absolute;
+    left:35%;
+    top:50%;
+    animation: A 2s infinite;
+    animation-delay: 200ms;
+  }
+  .D{
+    position: absolute;
+    left:50%;
+    top:50%;
+    animation: D 2s infinite;
+    animation-delay: 300ms;
+  }
+  .I{
+    position: absolute;
+    left:65%;
+    top:50%;
+    animation: I 2s infinite;
+    animation-delay: 400ms;
+  }
+  .N{
+    position: absolute;
+    left:75%;
+    top:50%;
+    animation: N 2s infinite;
+    animation-delay: 500ms;
+  }
+  .G{
+    position: absolute;
+    left:90%;
+    top:50%;
+    animation: G 2s infinite;
+    animation-delay: 600ms;
+  }
+  
+  @keyframes L {
+    0% {top:0px; opacity:0;}
+    50% {top:50px; opacity: 1;}
+    100% {top:0px; opacity: 0;}
+  }
+  @keyframes O {
+    0% {top:0px; opacity:0;}
+    50% {top:50px; opacity: 1;}
+    100% {top:0px; opacity: 0;}
+  }
+  @keyframes A {
+    0% {top:0px; opacity:0;}
+    50% {top:50px; opacity: 1;}
+    100% {top:0px; opacity: 0;}
+  }
+  @keyframes D {
+    0% {top:0px; opacity:0;}
+    50% {top:50px; opacity: 1;}
+    100% {top:0px; opacity: 0;}
+  }
+  @keyframes I {
+    0% {top:0px; opacity:0;}
+    50% {top:50px; opacity: 1;}
+    100% {top:0px; opacity: 0;}
+  }
+  @keyframes N {
+    0% {top:0px; opacity:0;}
+    50% {top:50px; opacity: 1;}
+    100% {top:0px; opacity: 0;}
+  }
+  @keyframes G {
+    0% {top:0px; opacity:0;}
+    50% {top:50px; opacity: 1;}
+    100% {top:0px; opacity: 0;}
+  } 

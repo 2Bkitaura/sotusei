@@ -1,0 +1,225 @@
+body {
+  margin: 0;
+  margin-bottom: 50px;
+  color: #000000;
+  font-family: 'Noto Sans JP', sans-serif;
+  background: #cfcecd;
+  height: 100%;
+  /* margin-bottom: 700px; */
+}
+header {
+  width: 100%;
+  height: 18%;
+  justify-content: space-between; 
+  padding-right: 30px; 
+  position: fixed;  /* 固定*/
+  top: 0;
+  box-sizing: border-box;
+  display: flex; 
+  align-items: center; 
+  color: #FFF;
+}
+.parallax-bg {
+  background-image: url('https://p4.wallpaperbetter.com/wallpaper/580/991/675/beautiful-sunset-clouds-cloudy-sky-wallpaper-preview.jpg');
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+  h1 a {
+    color: #ffffff;
+    font-size: 30px;
+    text-decoration: none;
+  }
+ul {
+list-style: none;  
+display: flex;
+ text-align: right;
+} 
+ul li a {
+  padding: 20px 50px; 
+  color: #e2dddd;
+  text-decoration: none;  
+  font-weight: bold; 
+  list-style: none;
+  display: inline-block;
+  padding: 10px;
+  font-size: 24px;
+ }  
+ ul li a:hover {
+  text-decoration: underline;
+}  
+.right{
+  margin: 0 0 0 auto;
+} 
+
+/*============
+nav
+=============*/
+nav {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: -300px;
+  bottom: 0;
+  width: 300px;
+  background: #ffffff;
+  overflow-x: hidden;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  transition: all .5s;
+  z-index: 3;
+  opacity: 0;
+}
+.open nav {
+  left: 0;
+  opacity: 1;
+}
+nav .inner {
+  padding: 25px;
+}
+nav .inner ul {
+  list-style: none;
+  text-align: right;
+  display: list-item;
+  margin: 0;
+  padding: 0;
+}
+nav .inner ul li {
+  position: relative;
+  margin: 0;
+  border-bottom: 1px solid rgb(49, 49, 49);
+}
+nav .inner ul li a {
+  display: block;
+  color: #333;
+  font-size: 14px;
+  padding: 1em;
+  text-decoration: none;
+  transition-duration: 0.2s;
+}
+nav .inner ul li a:hover {
+  background: #352b2b;
+}
+@media screen and (max-width: 767px) {
+  nav {
+    left: -220px;
+    width: 220px;
+  }
+}
+/*============
+.toggle_btn
+=============*/
+.toggle_btn {
+  display: block;
+  position: fixed;
+  top: 30px;
+  left: 30px;
+  width: 30px;
+  height: 30px;
+  transition: all .5s;
+  cursor: pointer;
+  z-index: 3;
+}
+.open .toggle_btn {
+  left: 330px;
+}
+.toggle_btn span {
+  display: block;
+  position: absolute;
+  left: 0;
+  width: 30px;
+  height: 2px;
+  background-color: rgb(189, 179, 179); /*ハンバーガーメニュー*/
+  border-radius: 4px;
+  transition: all .5s;
+}
+.toggle_btn span:nth-child(1) {
+  top: 4px;
+}
+.toggle_btn span:nth-child(2) {
+  top: 14px;
+}
+.toggle_btn span:nth-child(3) {
+  bottom: 4px;
+}
+.open .toggle_btn span {
+  background-color: rgb(0, 0, 0); /*やじるし*/
+}
+.open .toggle_btn {
+  -webkit-transform: rotate(360deg);
+  transform: rotate(360deg);
+}
+.open .toggle_btn span:nth-child(1), .open .toggle_btn span:nth-child(3) {
+  width: 16px;
+}
+.open .toggle_btn span:nth-child(1) {
+  -webkit-transform: translate(-1px,4px) rotate(-45deg);
+  transform: translate(-1px,4px) rotate(-45deg);
+}
+.open .toggle_btn span:nth-child(3) {
+  -webkit-transform: translate(-1px,-4px) rotate(45deg);
+  transform: translate(-1px,-4px) rotate(45deg);
+}
+@media screen and (max-width: 767px) {
+  .open .toggle_btn {
+    left: 250px;
+  }
+}
+/*============
+#mask
+=============*/
+#mask {
+  display: none;
+  transition: all .5s;
+}
+.open #mask {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(182, 182, 182, 0.459); /*背景色*/
+  opacity: .8;
+  z-index: 2;
+  cursor: pointer;
+}
+/*============
+main
+=============*/
+main {
+  width: 100%;
+  padding-top: 160px;
+  transition: all .5s;
+
+}
+.open main {
+  margin-left: 300px;
+}
+main h1 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  text-align: center;
+}
+
+.side {
+  background-color:#8d8d8d;
+  width:  30%;
+  height: 700px;
+  text-align:center;
+  margin-left:10px;/*サイドバーとメインコンテンツの間に隙間                    をあけた*/
+} 
+.content {
+  background-color:#582323;
+  width:  70%;
+  height: 700px;
+  text-align:center;
+}
+article {
+  display:flex;/*サイドバーとメインコンテンツを横並びにする                指定をした*/
+}
+.wrapper {
+  height: 1000px;
+  background: #00000081;
+}
