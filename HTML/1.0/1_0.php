@@ -18,7 +18,7 @@ for($i=0;$i<$can;$i++){
   $rand[$i]=rand(2,8);
   }
 ?>
- 
+ <!-- g -->
 <html>
   <head>
     <meta charset="UTF-8">
