@@ -7,8 +7,8 @@ $("#flipbook").turn({
           else $("#flipbook .p2").removeClass("fixed");
 
           if (page < book.turn("pages"))
-              $("#flipbook .p7").addClass("fixed");
-          else $("#flipbook .p7").removeClass("fixed");
+              $("#flipbook .p2").addClass("fixed");
+          else $("#flipbook .p2").removeClass("fixed");
 
       }
   }

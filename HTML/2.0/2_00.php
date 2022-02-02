@@ -41,7 +41,7 @@ for($i=2;$i<=8;$i++){
   
     <meta charset="UTF-8">
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="2_00a.css">
+    <link rel="stylesheet" href="2_00.css">
     <body>
     <div class="wrap">
 <form action="2_00Po.php" method="POST">

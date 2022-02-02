@@ -18,11 +18,14 @@ for($i=0;$i<$can;$i++){
   $rand[$i]=rand(2,8);
   }
 ?>
- <!-- g -->
+ 
 <html>
   <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="1_0.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.8.4/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Modaal/0.4.4/css/modaal.min.css">
+    <link rel="stylesheet" type="text/css" href="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/9-6-1/css/9-6-1.css"> 
 
     <title>Wedサイト</title>
   </head>
@@ -47,9 +50,9 @@ for($i=0;$i<$can;$i++){
         <h1><a href ="1_0.php">神話だよ</a></h1>
         <nav　class = "nav">
           <ul>
-              <li><a href="#">ヘルプ</a></li>
-              <li><a href="http://localhost/HTML/2.0/1_0.php">神話とは</a></li>
-              <li><a href="#">作品</a></li>
+              <li><a href="#info" class="modal-open">ヘルプ</a></li>
+              <li><a href="#">神話とは</a></li>
+              <li><a href="#">研究</a></li>
               <li><a href="#">人物</a></li>
           </ul> 
         </nav>
@@ -57,12 +60,35 @@ for($i=0;$i<$can;$i++){
         <div id="mask"></div>
       </div>
       <main>
+        <!-- モーダルウィンドウ -->
+      <section id="info">
+      <h2>ヘルプ</h2>
+
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+
+            <p>左上のメニューを押すと切り替えられるよ</p>
+            <img src="../img/ダウンロード.gif">
+            </div>
+
+            <div class="swiper-slide">
+              <p>見たいものをクリックすると本が出てくるよ<br>
+              長押しや、クリックでページがめくれるよ</p>
+              <img src="../img/pe-zimekuri2.gif">
+            </div>
+            </div>
+          <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+      </section>
+<!-- おわ-->
         <div class="wrapper">
         <article>
           <div class="content">
             <p>a</p>
 <!-- table上-->
-<iframe name = "main" class="yaa" src="1_00.php" frameborder="0" scrolling="yes"width="1200" height="700"></iframe>
+<iframe name = "main" class="yaa" src="1_00.php" frameborder="0" scrolling="yes"width="1200" height="650"></iframe>
         </tr>
         </tr>
       </td>
@@ -78,7 +104,12 @@ for($i=0;$i<$can;$i++){
         </article>
 
       </main>
-      <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script> 
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+      <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="  crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/Modaal/0.4.4/js/modaal.min.js"></script>
+      <script src="//unpkg.com/swiper/swiper-bundle.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.js"></script>
+      <script src="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/9-6-1/js/9-6-1.js"></script> 
       <script src="1_0a.js"></script> 
   </body>
 </html>

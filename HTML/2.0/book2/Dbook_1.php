@@ -1,6 +1,6 @@
 <meta charset="UTF-8">
 	<title></title>
-    <link rel="stylesheet" href="Sbookk.css">
+    <link rel="stylesheet" href="Dbook.css">
     	<script src="https://code.jquery.com/jquery-3.4.1.min.js"
     integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" 
     crossorigin="anonymous"></script> <!--jQueryをCDNから取得-->
@@ -30,5 +30,5 @@
      <div class="hard own-size"><!--page10--></div> 
 </div>
 </body>
-      <script src="Sbook_1.js"></script> 
+      <script src="Dbook.js"></script> 
 </html>

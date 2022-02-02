@@ -11,12 +11,12 @@ $ato_can = 0;
 $aft = array();
 $ato = array();
 $saki = array();
-$sql= "SELECT * FROM 神話  ORDER BY name,id ASC;";
+$sql= "SELECT * FROM 童話  ORDER BY name ASC;";
 $res = $pdo->query($sql); 
 if(@$_POST["search"]!=""){
   echo $_POST["search"];
   $search = $_POST["search"];
-  $afth = "SELECT * FROM 神話  WHERE name LIKE '$search%';";
+  $afth = "SELECT * FROM 童話  WHERE name LIKE '$search%';";
   echo $afth;
       $sql1=$pdo->query($afth);
 }
@@ -97,15 +97,19 @@ for($i=2;$i<=8;$i++){
   
   <meta charset="UTF-8">
   <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="1_00a.css">
+  <link rel="stylesheet" href="test2a.css">
     <body>
     <div class="wrap">
 
 <!-- 検索機能 -->
-<form action="test2Po.php" method="POST">
- <input type="search" name="search" placeholder="キーワードを入力">
- <input type="submit" name="submit" value="検索">
-</form>
+      <form action="test2Po.php" method="POST">
+        <input type="search" name="search" placeholder="キーワードを入力"><br>
+        <p></p>
+        <label class="checbox1"><input type="checkbox" name="Dchec1" value=1 checked>グリム童話</label>
+        <label class="checbox1"><input type="checkbox" name="Dchec1" value=2 checked>アンデルセン童話</label>
+        <label class="checbox1"><input type="checkbox" name="Dchec1" value=3 checked>イソップ寓話</label>
+        <input type="submit" name="submit" value="検索">
+      </form>  
 aaaaaa
     </div>
         <table class = "table_back">
@@ -114,7 +118,7 @@ aaaaaa
             <?php
 
             for($i = 0; $i < $saki_can; $i++){
-              echo '<a href="book1/Sbook_',$saki_id[$i],'.php">';
+              echo '<a href="book2/Sbook_',$saki_id[$i],'.php">';
               echo '<TABLE class="bookTable',$aft[$i], '"BORDER=1 CELLSPACING=10 align="left" >';
               echo  ' <TR>';
               echo ' <TD class="tategaki" height = 180px;>', $saki_name[$i],'</TD>';

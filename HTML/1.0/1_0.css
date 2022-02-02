@@ -93,18 +93,18 @@ body {
   nav .inner ul li {
     position: relative;
     margin: 0;
-    border-bottom: 1px solid rgb(49, 49, 49);
+    border-bottom: 1px solid rgb(97, 62, 21);
   }
   nav .inner ul li a {
     display: block;
-    color: #333;
+    color: rgb(32, 32, 32);
     font-size: 14px;
     padding: 1em;
     text-decoration: none;
     transition-duration: 0.2s;
   }
   nav .inner ul li a:hover {
-    background: #352b2b;
+    background: #8888888c;
   }
   @media screen and (max-width: 767px) {
     nav {
@@ -135,7 +135,7 @@ body {
     left: 0;
     width: 30px;
     height: 2px;
-    background-color: rgb(235, 231, 231); /*ハンバーガーメニュー*/
+    background-color: rgb(255, 255, 255); /*ハンバーガーメニュー*/
     border-radius: 4px;
     transition: all .5s;
   }
@@ -270,4 +270,14 @@ body {
   .bookTable8{
     background-color: #422b38d5;
   }
-  
+  .swiper-container {
+    width: 540px;
+    height: 400px;
+    margin: 20px auto;
+    }
+    
+    img {
+    width: 100%;
+    height: auto;
+    }
+    
