@@ -42,15 +42,15 @@ for($i=2;$i<=8;$i++){
   
     <meta charset="UTF-8">
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="test2a.css">
+    <link rel="stylesheet" href="test3a.css">
     <body>
       <div class="wrap">
         <form action="test3Po.php" method="POST">
           <input type="search" name="search" placeholder="キーワードを入力"><br>
           <p></p>
-          <label class="checbox1"><input type="checkbox" name="Dchec1" value=1 checked>グリム童話</label>
-          <label class="checbox1"><input type="checkbox" name="Dchec1" value=2 checked>アンデルセン童話</label>
-          <label class="checbox1"><input type="checkbox" name="Dchec1" value=3 checked>イソップ寓話</label>
+          <label class="checbox1"><input type="checkbox" name="Dchec[]" value="グリム童話" checked>グリム童話</label>
+          <label class="checbox1"><input type="checkbox" name="Dchec[]" value="アンデルセン童話" checked>アンデルセン童話</label>
+          <label class="checbox1"><input type="checkbox" name="Dchec[]" value="イソップ寓話" checked>イソップ寓話</label>
           <input type="submit" name="submit" value="検索">
       </form>  
 aaaaaaa

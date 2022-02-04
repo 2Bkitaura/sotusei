@@ -11,7 +11,7 @@ $ato_can = 0;
 $aft = array();
 $ato = array();
 $saki = array();
-$sql= "SELECT * FROM 童話  ORDER BY name ASC;";
+$sql= "SELECT * FROM 童話  ORDER BY Hiragana ASC;";
 $res = $pdo->query($sql); 
 if(@$_POST["search"]!=""){
   echo $_POST["search"];
@@ -33,9 +33,6 @@ $p = 0;
 $nam_ato=0;
 $nam_saki=0;
 foreach ($res as $row) {
-  // var_dump($row['name']);
-  // var_dump($key);
-  
   if($row['name'] == $key){
     $p = 1;
   }
@@ -50,24 +47,17 @@ foreach ($res as $row) {
     $nam_saki += 1;
   }
 }
-      // print_r($nam_ato);
-      // print_r($nam_saki);
-
 for($i=0; $i<$nam_saki; $i++){
   $saki_id[] = $row['id'];
   $saki_name[] = $row['name'];
   $saki_can += 1;
 }
-// print_r ($saki_name);
-// print_r ($saki_can);
 
 for($i=0; $i<$nam_ato; $i++){
   $ato_id[] = $row['id'];
   $ato_name[] = $row['name'];
   $ato_can += 1;
 }
-// print_r ($ato_name);
-// print_r ($ato_can);
 
 for($i=8;$i>=2;$i--){
   $aft1[] =$i;
@@ -93,11 +83,23 @@ for($i=2;$i<=8;$i++){
 for($i=2;$i<=8;$i++){
   $aft[] =$i;
 }
+// Dchecの個数確認
+// $checked_arr = $POST['Dchec']
+// $count = count($checked_arr);
+
+$gri_D = $_POST['Dchec'];
+// $and_D = $_POST['Dchec'];
+// $iso_D = $_POST['Dchec'];
+
+print_r ($gri_D);
+// print_r ($and_D);
+// print_r ($iso_D);
+
 ?>
   
   <meta charset="UTF-8">
   <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="test2a.css">
+  <link rel="stylesheet" href="test3a.css">
     <body>
     <div class="wrap">
 
