@@ -93,6 +93,21 @@ for($i=2;$i<=8;$i++){
 for($i=2;$i<=8;$i++){
   $aft[] =$i;
 }
+// チェックボックス処理
+$chec_arr = $_POST["Dchec"];
+echo $chec_arr;
+$count = count($chec_arr);
+echo $count;
+
+if($count = 0; && $count = 3){
+  //そのまま
+  $res
+  if($count = 1){
+    $
+  }
+}
+//SELECT * FROM `童話` WHERE Genre="グリム童話" OR Genre="アンデルセン童話";
+?>
 ?>
   
   <meta charset="UTF-8">
