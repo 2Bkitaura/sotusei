@@ -21,12 +21,12 @@ if(@$_POST["search"]!=""){
       $sql1=$pdo->query($afth);
 }
 $key = "";
-if(count($sql1) != 0){
+// if(count($sql1) != 0){
   foreach ($sql1 as $row1) {
     $key = $row1['name'];
     break;
   }
-}
+// }
 
 //----------------------処理
 $p = 0; 
@@ -83,17 +83,33 @@ for($i=2;$i<=8;$i++){
 for($i=2;$i<=8;$i++){
   $aft[] =$i;
 }
-// Dchecの個数確認
-// $checked_arr = $POST['Dchec']
-// $count = count($checked_arr);
+// チェックボックス処理--------------------------------------------
+  $chec_arr = $_POST['Dchec'];
+  $count = count($chec_arr);
+  
+//チェックボックスの中身取得
 
-$gri_D = $_POST['Dchec'];
-// $and_D = $_POST['Dchec'];
-// $iso_D = $_POST['Dchec'];
 
-print_r ($gri_D);
-// print_r ($and_D);
-// print_r ($iso_D);
+if (isset($_POST['Dchec']) && is_array($_POST['Dchec'])) {
+  $Dchec = implode("、", $_POST["Dchec"]);
+  //var_dump($_POST["Dchec"]);
+}
+$d = 0;
+for($i = 0; $i<$Dchec; $i++){
+  $Dchec[$i] = $Dchec[$i];
+  
+}
+echo $_POST["Dchec"];
+
+$inClause = substr(str_repeat(',?', count($_POST["Dchec"])), 1);
+
+$stmt = $pdo->prepare(sprintf('SELECT * FROM `童話` WHERE Genre in (%s) AND name LIKE "い%" ORDER BY Hiragana ASC', $inClause));
+$stmt->execute($_POST["Dchec"]);
+
+foreach($stmt as $loop){
+      //結果を表示
+      echo "name = ".$loop['name'].PHP_EOL;
+  }
 
 ?>
   
@@ -107,9 +123,9 @@ print_r ($gri_D);
       <form action="test2Po.php" method="POST">
         <input type="search" name="search" placeholder="キーワードを入力"><br>
         <p></p>
-        <label class="checbox1"><input type="checkbox" name="Dchec1" value=1 checked>グリム童話</label>
-        <label class="checbox1"><input type="checkbox" name="Dchec1" value=2 checked>アンデルセン童話</label>
-        <label class="checbox1"><input type="checkbox" name="Dchec1" value=3 checked>イソップ寓話</label>
+        <label class="checbox1"><input type="checkbox" name="Dchec" value=1 checked>グリム童話</label>
+        <label class="checbox1"><input type="checkbox" name="Dchec" value=2 checked>アンデルセン童話</label>
+        <label class="checbox1"><input type="checkbox" name="Dchec" value=3 checked>イソップ寓話</label>
         <input type="submit" name="submit" value="検索">
       </form>  
 aaaaaa
