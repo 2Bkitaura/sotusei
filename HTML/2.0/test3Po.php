@@ -14,49 +14,11 @@ $saki = array();
 $sql= "SELECT * FROM 童話  ORDER BY Hiragana ASC;";
 $res = $pdo->query($sql); 
 if(@$_POST["search"]!=""){
-  echo $_POST["search"];
+  // echo $_POST["search"];
   $search = $_POST["search"];
-  $afth = "SELECT * FROM 童話  WHERE name LIKE '$search%';";
-  echo $afth;
+  $afth = "SELECT * FROM 童話  WHERE Hiragana LIKE '$search%' ORDER BY Hiragana ASC;";
+  // echo $afth;
       $sql1=$pdo->query($afth);
-}
-$key = "";
-// if(count($sql1) != 0){
-  foreach ($sql1 as $row1) {
-    $key = $row1['name'];
-    break;
-  }
-// }
-
-//----------------------処理
-$p = 0; 
-$nam_ato=0;
-$nam_saki=0;
-foreach ($res as $row) {
-  if($row['name'] == $key){
-    $p = 1;
-  }
-  if($p == 0){
-    array_push($ato_name, $row['name']);
-    array_push($ato_id, $row['id']);
-    $nam_ato += 1;
-  }
-  else if($p == 1){
-    array_push($saki_name, $row['name']);
-    array_push($saki_id, $row['id']);
-    $nam_saki += 1;
-  }
-}
-for($i=0; $i<$nam_saki; $i++){
-  $saki_id[] = $row['id'];
-  $saki_name[] = $row['name'];
-  $saki_can += 1;
-}
-
-for($i=0; $i<$nam_ato; $i++){
-  $ato_id[] = $row['id'];
-  $ato_name[] = $row['name'];
-  $ato_can += 1;
 }
 
 for($i=8;$i>=2;$i--){
@@ -88,28 +50,72 @@ for($i=2;$i<=8;$i++){
   $count = count($chec_arr);
   
 //チェックボックスの中身取得
-
-
 if (isset($_POST['Dchec']) && is_array($_POST['Dchec'])) {
   $Dchec = implode("、", $_POST["Dchec"]);
-  //var_dump($_POST["Dchec"]);
 }
 $d = 0;
 for($i = 0; $i<$Dchec; $i++){
   $Dchec[$i] = $Dchec[$i];
-  
 }
-echo $_POST["Dchec"];
 
+//sql文発行
 $inClause = substr(str_repeat(',?', count($_POST["Dchec"])), 1);
 
-$stmt = $pdo->prepare(sprintf('SELECT * FROM `童話` WHERE Genre in (%s) AND name LIKE "い%" ORDER BY Hiragana ASC', $inClause));
+$liker = $search.'%';
+// echo $liker;
+$stmt = $pdo->prepare(sprintf("SELECT * FROM `童話` WHERE Genre in (%s) AND Hiragana LIKE '%s' ORDER BY Hiragana ASC", $inClause, $liker));
+$STMT = $pdo->prepare(sprintf("SELECT * FROM `童話` WHERE Genre in (%s) ORDER BY Hiragana ASC", $inClause));
 $stmt->execute($_POST["Dchec"]);
+$STMT->execute($_POST["Dchec"]);
 
-foreach($stmt as $loop){
-      //結果を表示
-      echo "name = ".$loop['name'].PHP_EOL;
+// foreach($stmt as $loop){
+// //結果を表示
+//   echo "name = ".$loop['name'].PHP_EOL;
+// }
+  
+$key = "";
+// if(count($sql1) != 0){
+foreach ($stmt as $stmt1) {
+  $key = $stmt1['name'];
+  break;
+}
+// foreach ($sql1 as $stmt1) {
+//   $key = $stmt1['name'];
+//   break;
+// }
+// }
+
+//処理--------------------------------------
+$p = 0; 
+$nam_ato=0;
+$nam_saki=0;
+foreach ($STMT as $stmt) {
+  if($stmt['name'] == $key){
+    $p = 1;
   }
+  if($p == 0){
+    array_push($ato_name, $stmt['name']);
+    array_push($ato_id, $stmt['id']);
+    $nam_ato += 1;
+  }
+  else if($p == 1){
+    array_push($saki_name, $stmt['name']);
+    array_push($saki_id, $stmt['id']);
+    $nam_saki += 1;
+  }
+}
+for($i=0; $i<$nam_saki; $i++){
+  $saki_id[] = $stmt['id'];
+  $saki_name[] = $stmt['name'];
+  $saki_can += 1;
+}
+
+for($i=0; $i<$nam_ato; $i++){
+  $ato_id[] = $stmt['id'];
+  $ato_name[] = $stmt['name'];
+  $ato_can += 1;
+}
+//-------------------------------------------------
 
 ?>
   
