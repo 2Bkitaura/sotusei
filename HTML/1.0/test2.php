@@ -3,7 +3,7 @@
 $user = "root";
 $pass = "";
 $pdo = new PDO("mysql:host=localhost;dbname=sotusei",$user,$pass);
-$sql= "SELECT * FROM 童話  ORDER BY name ASC;";
+$sql= "SELECT * FROM 童話  ORDER BY Hiragana ASC;";
 $res = $pdo->query($sql); 
 $id = array();
 $name = array();
@@ -60,7 +60,7 @@ aaaaaaa
           <td class = "tr_back">
             <?php
           for($i = 0; $i < $can; $i++){
-          echo '<a href="../1.0/book2/Dbook_',$id[$i],'.php">';
+          echo '<a href="../2.0/book2/Dbook_',$id[$i],'.php">';
           echo '<TABLE class="bookTable',$aft[$i], '"BORDER=1 CELLSPACING=10 align="left" >';
           echo  ' <TR>';
           echo ' <TD class="tategaki" height = 180px;>', $name[$i],'</TD>';

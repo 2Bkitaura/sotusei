@@ -42,8 +42,8 @@ for($i=2;$i<=8;$i++){
   <link rel="stylesheet" href="1_00a.css">
     <body>
     <div class="wrap">
-<form action="test2Po.php" method="POST">
- <input type="search" name="search" placeholder="カタカナで入力">
+<form action="1_00Po.php" method="POST">
+ <input type="search" name="search" placeholder="キーワードを入力">
  <input type="submit" name="submit" value="検索">
 </form>
 aaaaaaa

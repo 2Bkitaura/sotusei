@@ -3,7 +3,7 @@
 $user = "root";
 $pass = "";
 $pdo = new PDO("mysql:host=localhost;dbname=sotusei",$user,$pass);
-$sql= "SELECT * FROM 童話  ORDER BY name,id ASC;";
+$sql= "SELECT * FROM 童話  ORDER BY Hiragana ASC;";
 $res = $pdo->query($sql); 
 $id = array();
 $name = array();
@@ -12,6 +12,7 @@ $aft = array();
 foreach($res as $row){
   $id[] = $row['id'];
   $name[] = $row['name'];
+  $Genre[] = $row['Genre'];
   $can += 1;
 }
 for($i=2;$i<=8;$i++){
@@ -41,21 +42,24 @@ for($i=2;$i<=8;$i++){
   
     <meta charset="UTF-8">
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="2_00.css">
+    <link rel="stylesheet" href="2_00a.css">
     <body>
-    <div class="wrap">
-<form action="2_00Po.php" method="POST">
- <input type="search" name="search" placeholder="カタカナで入力">
- <input type="submit" name="submit" value="検索">
-</form>
-aaaaaaa
-    </div>
+      <div class="wrap">
+        <form action="2_00Po.php" method="POST">
+          <input type="search" name="search" placeholder="キーワードを入力"><br>
+          <p></p>
+          <label class="checbox1"><input type="checkbox" name="Dchec[]" value="グリム童話" checked>グリム童話</label>
+          <label class="checbox1"><input type="checkbox" name="Dchec[]" value="アンデルセン童話" checked>アンデルセン童話</label>
+          <label class="checbox1"><input type="checkbox" name="Dchec[]" value="イソップ寓話" checked>イソップ寓話</label>
+          <input type="submit" name="submit" value="検索">
+      </form>  
+      </div>
         <table class = "table_back">
           <tr>
           <td class = "tr_back">
             <?php
           for($i = 0; $i < $can; $i++){
-          echo '<a href="book1/Sbook_',$id[$i],'.php">';
+          echo '<a href="../2.0/book2/Dbook_',$id[$i],'.php">';
           echo '<TABLE class="bookTable',$aft[$i], '"BORDER=1 CELLSPACING=10 align="left" >';
           echo  ' <TR>';
           echo ' <TD class="tategaki" height = 180px;>', $name[$i],'</TD>';

@@ -118,7 +118,7 @@ aaaaaa
             <?php
 
             for($i = 0; $i < $saki_can; $i++){
-              echo '<a href="book2/Sbook_',$saki_id[$i],'.php">';
+              echo '<a href="/book2/Dbook_',$saki_id[$i],'.php">';
               echo '<TABLE class="bookTable',$aft[$i], '"BORDER=1 CELLSPACING=10 align="left" >';
               echo  ' <TR>';
               echo ' <TD class="tategaki" height = 180px;>', $saki_name[$i],'</TD>';
@@ -129,7 +129,7 @@ aaaaaa
               echo '</a>';
             }
             for($i = 0; $i < $ato_can; $i++){
-              echo '<a href="book1/Sbook_',$ato_id[$i],'.php">';
+              echo '<a href="/book2/Dbook_',$ato_id[$i],'.php">';
               echo '<TABLE class="bookTable',$aft[$i], '"BORDER=1 CELLSPACING=10 align="left" >';
               echo  ' <TR>';
               echo ' <TD class="tategaki" height = 180px;>', $ato_name[$i],'</TD>';

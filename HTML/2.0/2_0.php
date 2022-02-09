@@ -4,7 +4,7 @@
 $user = "root";
 $pass = "";
 $pdo = new PDO("mysql:host=localhost;dbname=sotusei",$user,$pass);
-$sql= "SELECT * FROM 童話 ORDER BY id ASC;";
+$sql= "SELECT * FROM 童話 ORDER BY id DESC;";
 $res = $pdo->query($sql); 
 $id = array();
 $name = array();
@@ -47,13 +47,13 @@ for($i=0;$i<$can;$i++){
           <span></span>
         </div>
         </div>
-        <h1><a href ="2_0.php">童話だよ</a></h1>
+        <h1><a href ="1_0.php">童話だよ</a></h1>
         <nav　class = "nav">
           <ul>
-              <li><a href="index.html">ヘルプ</a></li>
-              <li><a href="index.html">童話とは</a></li>
-              <li><a href="index.html#about">作品</a></li>
-              <li><a href="index.html#menu">種類</a></li>
+              <li><a href="#info" class="modal-open">ヘルプ</a></li>
+              <li><a href="#">童話とは</a></li>
+              <li><a href="#">作品</a></li>
+              <li><a href="#">種類</a></li>
           </ul> 
         </nav>
       </header>
@@ -86,11 +86,14 @@ for($i=0;$i<$can;$i++){
         <div class="wrapper">
         <article>
           <div class="content">
-            <p>メインコンテンツ</p>
-<iframe name = "main" class="yaa" src="2_00.php" frameborder="0" scrolling="yes"width="1200" height="700"></iframe>
+            <p>a</p>
+<!-- table上-->
+<iframe name = "main" class="yaa" src="2_00.php" frameborder="0" scrolling="yes"width="1200" height="650"></iframe>
         </tr>
         </tr>
       </td>
+<!-- /table上-->
+<!-- table下-->
   <tr>
 </tr>
 </td>
@@ -101,12 +104,12 @@ for($i=0;$i<$can;$i++){
         </article>
 
       </main>
-      <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script> 
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
       <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="  crossorigin="anonymous"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/Modaal/0.4.4/js/modaal.min.js"></script>
       <script src="//unpkg.com/swiper/swiper-bundle.min.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.js"></script>
       <script src="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/9-6-1/js/9-6-1.js"></script> 
-      <script src="2_0a.js"></script> 
+      <script src="../1.0/1_0a.js"></script> 
   </body>
 </html>

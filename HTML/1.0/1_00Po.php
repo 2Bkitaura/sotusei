@@ -102,7 +102,7 @@ for($i=2;$i<=8;$i++){
     <div class="wrap">
 
 <!-- 検索機能 -->
-<form action="test2Po.php" method="POST">
+<form action="1_00.php" method="POST">
  <input type="search" name="search" placeholder="キーワードを入力">
  <input type="submit" name="submit" value="検索">
 </form>
