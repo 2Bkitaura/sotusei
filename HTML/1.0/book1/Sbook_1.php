@@ -237,7 +237,7 @@
             <p class=pesu>12</p>
         </div>
     </div>  
-    <div class="hard own-size">page17</div>
+    <div class="hard fixed own-size">page17</div>
     <div class="hard own-size">page18</div>
 </div>
 </body>

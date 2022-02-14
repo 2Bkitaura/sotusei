@@ -140,7 +140,7 @@
         <div class=pegi_reiout_BU>
         </div>
     </div>  
-    <div class="hard own-size">page11</div>
+    <div class="hard fixed own-size">page11</div>
     <div class="hard own-size">page12</div>
 </div>
 </body>
