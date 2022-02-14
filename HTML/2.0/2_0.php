@@ -52,7 +52,7 @@ for($i=0;$i<$can;$i++){
           <ul>
               <li><a href="#info" class="modal-open">ヘルプ</a></li>
               <li><a href="../0.0/D_toha.php">童話とは</a></li>
-              <li><a href="../0.0/D_sakuhin.php">作品</a></li>
+              <li><a href="../0.0/D_sakuhin.php">人気作品</a></li>
               <li><a href="../0.0/D_syurui.php">種類</a></li>
           </ul> 
         </nav>
