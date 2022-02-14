@@ -1,0 +1,63 @@
+div {
+  color: white;
+}
+
+.odd {
+  background-color: blue;
+}
+.even {
+  background-color: green;
+}
+.p1,
+.p8{
+  width: 420px;
+  height: 540px;
+  background-size: cover;
+  background-image: url('http://photoshopvip.net/wp-content/uploads/2009/07/000-front-cover-q75-1007x1300-w640.jpg');
+}
+.p2,
+.p7{
+  width: 420px;
+  height: 540px;
+  background-color: rgb(83, 47, 27);
+}
+#flipbook {
+  width: 600px;
+  height: 450px;
+  margin: 120px 300px;
+  /* background-size: cover;
+  background-image: url('https://thumb.ac-illust.com/39/39f7920c90b26a6dd839602c6164969a_t.jpeg'); */
+}
+  .boo{
+    width:  150px;
+    height: 100px;
+    text-align:center;
+    background-size: cover;
+    background-color: rgba(151, 143, 138, 0.74);
+  /* background-image: url('https://www.tilelife.co.jp/files/item/48244_1.jpg'); */
+}
+.taitol{
+  text-align: center;
+  font-size: 50px
+}
+/*ぼたん*/
+.btn-circle-flat {
+  display: inline-block;
+  text-decoration: none;
+  background: #ffffff;
+  color: rgb(0, 0, 0);
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  border-radius: 50%;
+  text-align: center;
+  overflow: hidden;
+  transition: .4s;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+/*AFTH*/
+.btn-circle-flat:hover {
+  background: #858585;
+}

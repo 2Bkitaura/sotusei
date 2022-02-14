@@ -142,7 +142,7 @@ if(empty($_POST["Dchec"])){
   
 <meta charset="UTF-8">
   <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="2_00a.css">
+  <link rel="stylesheet" href="2_00abc.css">
   <body>
   <div class="wrap">
 

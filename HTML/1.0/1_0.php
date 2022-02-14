@@ -36,7 +36,7 @@ for($i=0;$i<$can;$i++){
           <div class="inner">
             <ul class = "innnn">
               <li><a href="1_0.php">神話</a></li>
-              <li><a href="http://localhost/HTML/2.0/2_0.php">童話</a></li>
+              <li><a href="../2.0/2_0.php">童話</a></li>
             </ul>
           </div>
         </nav>
@@ -51,9 +51,9 @@ for($i=0;$i<$can;$i++){
         <nav　class = "nav">
           <ul>
               <li><a href="#info" class="modal-open">ヘルプ</a></li>
-              <li><a href="#">神話とは</a></li>
-              <li><a href="#">研究</a></li>
-              <li><a href="#">人物</a></li>
+              <li><a href="../0.0/S_toha.php">神話とは</a></li>
+              <li><a href="../0.0/S_kenk.php">研究</a></li>
+              <li><a href="../0.0/S_sindan.php">診断</a></li>
           </ul> 
         </nav>
       </header>
@@ -67,15 +67,23 @@ for($i=0;$i<$can;$i++){
       <div class="swiper-container">
         <div class="swiper-wrapper">
             <div class="swiper-slide">
-
-            <p>左上のメニューを押すと切り替えられるよ</p>
-            <img src="../img/ダウンロード.gif">
+              <p>左上のメニューを押すと切り替えられるよ</p>
+              <img src="../img/ダウンロード.gif">
             </div>
-
             <div class="swiper-slide">
               <p>見たいものをクリックすると本が出てくるよ<br>
               長押しや、クリックでページがめくれるよ</p>
               <img src="../img/pe-zimekuri2.gif">
+            </div>
+            <div class="swiper-slide">
+              <h4>左上のメニューの機能紹介</h4>
+              <img src="../img/mo_he.png">
+            <p>「神話だよ」を押すとTopにとぶよ</p>
+            <p>「ヘルプ」を押すとまたこの画面が表示されるよ</p>
+            <p>「神話とは」を押すと神話について書かれている画面にとぶよ</p>
+            <p>「研究」を押すと神話の研究について書かれている画面にとぶよ</p>
+            <p>「診断」を押すと自分が何の神話の神様に似ているか診断できるよ</p>
+            </div>
             </div>
             </div>
           <div class="swiper-button-prev"></div>

@@ -47,13 +47,13 @@ for($i=0;$i<$can;$i++){
           <span></span>
         </div>
         </div>
-        <h1><a href ="1_0.php">童話だよ</a></h1>
+        <h1><a href ="2_0.php">童話だよ</a></h1>
         <nav　class = "nav">
           <ul>
               <li><a href="#info" class="modal-open">ヘルプ</a></li>
-              <li><a href="#">童話とは</a></li>
-              <li><a href="#">作品</a></li>
-              <li><a href="#">種類</a></li>
+              <li><a href="../0.0/D_toha.php">童話とは</a></li>
+              <li><a href="../0.0/D_sakuhin.php">作品</a></li>
+              <li><a href="../0.0/D_syurui.php">種類</a></li>
           </ul> 
         </nav>
       </header>
@@ -67,15 +67,22 @@ for($i=0;$i<$can;$i++){
       <div class="swiper-container">
         <div class="swiper-wrapper">
             <div class="swiper-slide">
-
-            <p>左上のメニューを押すと切り替えられるよ</p>
-            <img src="../img/ダウンロード.gif">
+              <p>左上のメニューを押すと切り替えられるよ</p>
+              <img src="../img/ダウンロード.gif">
             </div>
-
             <div class="swiper-slide">
               <p>見たいものをクリックすると本が出てくるよ<br>
               長押しや、クリックでページがめくれるよ</p>
               <img src="../img/pe-zimekuri2.gif">
+            </div>
+            <div class="swiper-slide">
+              <h4>左上のメニューの機能紹介</h4>
+              <img src="../img/mo_si.png">
+                <p>「童話だよ」を押すとTopにとぶよ</p>
+                <p>「ヘルプ」を押すとまたこの画面が表示されるよ</p>
+                <p>「童話とは」を押すと神話について書かれている画面にとぶよ</p>
+                <p>「作品」を押すとそれぞれの童話の人気作品を知れるよ</p>
+                <p>「種類」を押すとそれぞれの童話の違いに書かれている画面にとぶよ</p>
             </div>
             </div>
           <div class="swiper-button-prev"></div>

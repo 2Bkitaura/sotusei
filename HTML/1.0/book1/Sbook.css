@@ -1,6 +1,7 @@
 div {
   color: rgb(0, 0, 0);
 }
+
 .odd {
   background-color: rgb(245, 236, 227);
 }
@@ -8,25 +9,18 @@ div {
   background-color: rgb(245, 236, 227);
 }
 .p1,
-.p18{
+.p8{
   width: 420px;
   height: 540px;
   background-size: cover;
   background-image: url('http://photoshopvip.net/wp-content/uploads/2009/07/000-front-cover-q75-1007x1300-w640.jpg');
 }
- .p2{
+.p2,
+.p7{
   width: 420px;
   height: 540px;
   color:rgb(83, 47, 27);
-  background-image: url("../img/ep-zi.png");
-  background-size:contain;  
-}
-.p17{
-  width: 420px;
-  height: 540px;
-  color:rgb(83, 47, 27);
-  background-image: url("../img/pe-zi.png");
-  background-size:contain;  
+  background-color: rgb(83, 47, 27);
 }
 #flipbook {     /*中のページ*/
   width: 700px;
@@ -46,17 +40,17 @@ div {
   text-align: center;
   font-size: 40px;
   margin: auto;
-  padding: 5px;
-  margin:15%;
+  padding: 5px; 
+  margin:15%; 
   text-align: center;
-  border: 5px solid #333333;
+  border: 5px solid #333333; 
   background-color: #dad8d8c9;
 }
 /*ぼたん*/
 .btn-circle-flat {
   display: inline-block;
   text-decoration: none;
-  background: #FFFFFF;
+  background: #ffffff;
   color: rgb(0, 0, 0);
   width: 50px;
   height: 50px;
@@ -73,40 +67,10 @@ div {
 .btn-circle-flat:hover {
   background: #858585;
 }
-h2{
-  width:  320px;
-  text-align: left;
-  margin-left: 5%;
-  border-bottom: solid 3px black;
-}
-h3{
-  width:  320px;
-  text-align: left;
-  margin-left: 5%;
-  margin-top: 26px;
-  border-bottom: solid 3px black;
-}
-.pesu{
-  font-size: 10px;
-  position: absolute;
-  left: 50%;
-  bottom: 0;
-  transform: translateX(-50%);
-  -webkit-transform: translateX(-50%);
-}
-.pegi_reiout_MK {
-margin-top: 1%;
+.pegi_reiout {
+margin-top: 10%
 }
 /*リスト*/
 ol.example li{
   margin-bottom: 5%;
-  text-align: left;
 }
-.pegi_reiout_BU {
-  margin-top: 1%;
-  writing-mode: horizontal-tb;
-  }
-  .pegi_reiout_BU p{
-    margin-left: 7%;
-    text-align: left;
-  }
