@@ -144,5 +144,5 @@
     <div class="hard own-size">page12</div>
 </div>
 </body>
-      <script src="Dbook.js"></script>
+      <script src="../../1.0/book1/Sbook_1.js"></script>
 </html>

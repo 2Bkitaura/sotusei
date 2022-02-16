@@ -1,0 +1,148 @@
+body {
+  background: linear-gradient(rgb(43, 41, 41), rgb(0, 0, 0));
+  font: 14px sans-serif;
+  padding: 20px;
+}
+.letter {
+  background: #fff;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  margin: 26px auto 0;
+  max-width: 850px;
+  min-height: 600px;
+  padding: 24px;
+  position: relative;
+  width: 80%;
+}
+.letter:before, .letter:after {
+  content: "";
+  height: 98%;
+  position: absolute;
+  width: 100%;
+  z-index: -1;
+}
+.letter:before {
+  background: #fafafa;
+  box-shadow: 0 0 8px rgba(0,0,0,0.2);
+  left: -5px;
+  top: 4px;
+  transform: rotate(-2.5deg);
+}
+.letter:after {
+  background: #f6f6f6;
+  box-shadow: 0 0 3px rgba(0,0,0,0.2);
+  right: -3px;
+  top: 1px;
+  transform: rotate(1.4deg);
+}
+.letter p{
+  font-size: 17px;
+}
+.husen{
+  width: 100px;
+  height: 30px;
+  padding: 1em 1.5em;
+  overflow: hidden;
+  box-shadow: .25rem 0 .25rem hsla(0, 0%, 0%, .1);
+  background-image:
+    linear-gradient(90deg, hsla(0, 0%, 45%, .1) 2rem, hsla(0, 100%, 100%, 0) 2.5rem)
+  , linear-gradient(90deg, hsla(60, 100%, 85%, 1), hsla(60, 100%, 85%, 1));
+  font-size: 1.125rem;
+  line-height: 1.8;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+	position: relative;
+	bottom: 700px;
+	right: -85%;
+  margin-top: 20px;
+}
+.husen p{
+  margin-left: 20px;
+  position: relative;
+  bottom: 15px;
+}
+.haiti{
+  margin-left: 5%;
+}
+.haiti img{
+  text-align:center;
+}
+.husen2{
+  width: 100px;
+  height: 30px;
+  padding: 1em 1.5em;
+  overflow: hidden;
+  box-shadow: .25rem 0 .25rem hsla(0, 0%, 0%, .1);
+  background-image:
+    linear-gradient(90deg, hsla(0, 0%, 45%, .1) 2rem, hsla(0, 100%, 100%, 0) 2.5rem)
+  , linear-gradient(90deg, hsla(60, 100%, 85%, 1), hsla(60, 100%, 85%, 1));
+  font-size: 1.125rem;
+  line-height: 1.8;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+	position: relative;
+	bottom: 960px;
+	right: -85%;
+  margin-top: 20px;
+}
+.husen2 p{
+  margin-left: 20px;
+  position: relative;
+  bottom: 15px;
+}
+.husen_Dt{
+  width: 100px;
+  height: 30px;
+  padding: 1em 1.5em;
+  overflow: hidden;
+  box-shadow: .25rem 0 .25rem hsla(0, 0%, 0%, .1);
+  background-image:
+    linear-gradient(90deg, hsla(0, 0%, 45%, .1) 2rem, hsla(0, 100%, 100%, 0) 2.5rem)
+  , linear-gradient(90deg, hsla(60, 100%, 85%, 1), hsla(60, 100%, 85%, 1));
+  font-size: 1.125rem;
+  line-height: 1.8;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+	position: relative;
+	bottom: 980px;
+	right: -85%;
+  margin-top: 20px;
+}
+.husen_Dt p{
+  margin-left: 20px;
+  position: relative;
+  bottom: 15px;
+}
+.husen_sak{
+  width: 100px;
+  height: 30px;
+  padding: 1em 1.5em;
+  overflow: hidden;
+  box-shadow: .25rem 0 .25rem hsla(0, 0%, 0%, .1);
+  background-image:
+    linear-gradient(90deg, hsla(0, 0%, 45%, .1) 2rem, hsla(0, 100%, 100%, 0) 2.5rem)
+  , linear-gradient(90deg, hsla(60, 100%, 85%, 1), hsla(60, 100%, 85%, 1));
+  font-size: 1.125rem;
+  line-height: 1.8;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+	position: relative;
+	bottom: 3100px;
+	right: -85%;
+  margin-top: 20px;
+}
+.husen_sak p{
+  margin-left: 20px;
+  position: relative;
+  bottom: 15px;
+}
+.yokonarabi{
+  display: flex;
+  margin-bottom: 5%;
+  margin-left: 5%;
+}
+.yokonarabi img{
+  margin-left: 5%;
+}
+.sukima{
+  margin-left: 3%;
+}
